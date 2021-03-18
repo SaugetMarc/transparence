@@ -1,4 +1,5 @@
 from django.core.management.base import BaseCommand, CommandError
+from ...controls.transparence import Transparence
 
 class Command(BaseCommand):
     help = 'Génére excel formater à partir de la base transparence'
@@ -8,4 +9,9 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
 
+        self.controls = Transparence()
+
+        self.controls.control()
+
         self.stdout.write(self.style.SUCCESS('Fichier géneré'))
+
