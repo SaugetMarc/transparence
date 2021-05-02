@@ -121,8 +121,16 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 DATA = {
+    'avantage' :  'data/avantage.csv',
+    'convention': 'data/convention.csv',
+    'remuneration':'data/remuneration.csv',
+    'entreprise': 'data/entreprise.csv'
+}
+
+DATA_LIGHT = {
     'avantage' :  'data/avantage_light.csv',
     'convention': 'data/convention_light.csv',
-    'entreprise': 'data/entreprise.csv',
-    'remuneration':'data/remuneration_light.csv'
+    'remuneration':'data/remuneration_light.csv',
+    'entreprise': 'data/entreprise.csv'
+    
 }
